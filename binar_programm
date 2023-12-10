@@ -1,0 +1,5 @@
+decimal_num = int(input("Gib eine Dezimalzahl ein: "))
+
+# Konvertierung in Hexadezimal
+hexadecimal_num = hex(decimal_num)
+print(f"Die Hexadezimaldarstellung von {decimal_num} ist: {hexadecimal_num}")
