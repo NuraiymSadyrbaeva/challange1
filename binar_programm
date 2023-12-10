@@ -13,3 +13,34 @@ print(f"Die Hexadezimaldarstellung von {decimal_num} ist: {hexadecimal_num}")
 binary_num = input("Gib eine Binärzahl ein: ")
 decimal_from_binary = int(binary_num, 2)
 print(f"Die Dezimaldarstellung von {binary_num} ist: {decimal_from_binary}")
+#
+def decimal_to_hex(decimal_num):
+    return hex(decimal_num)
+
+def binary_to_decimal(binary_num):
+    return int(binary_num, 2)
+
+def main():
+    while True:
+        print("\n1. Dezimal zu Hexadezimal")
+        print("2. Binär zu Dezimal")
+        print("3. Beenden")
+
+        choice = input("Wähle eine Option (1/2/3): ")
+
+        if choice == '1':
+            decimal_num = int(input("Gib eine Dezimalzahl ein: "))
+            hexadecimal_num = decimal_to_hex(decimal_num)
+            print(f"Die Hexadezimaldarstellung von {decimal_num} ist: {hexadecimal_num}")
+        elif choice == '2':
+            binary_num = input("Gib eine Binärzahl ein: ")
+            decimal_from_binary = binary_to_decimal(binary_num)
+            print(f"Die Dezimaldarstellung von {binary_num} ist: {decimal_from_binary}")
+        elif choice == '3':
+            print("Programm wird beendet. Auf Wiedersehen!")
+            break
+        else:
+            print("Ungültige Eingabe. Bitte wähle eine gültige Option.")
+
+if __name__ == "__main__":
+    main()
