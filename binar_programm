@@ -3,3 +3,13 @@ decimal_num = int(input("Gib eine Dezimalzahl ein: "))
 # Konvertierung in Hexadezimal
 hexadecimal_num = hex(decimal_num)
 print(f"Die Hexadezimaldarstellung von {decimal_num} ist: {hexadecimal_num}")
+
+# Von Dezimal zu Hexadezimal
+decimal_num = int(input("Gib eine Dezimalzahl ein: "))
+hexadecimal_num = hex(decimal_num)
+print(f"Die Hexadezimaldarstellung von {decimal_num} ist: {hexadecimal_num}")
+
+# Von Binär zu Dezimal
+binary_num = input("Gib eine Binärzahl ein: ")
+decimal_from_binary = int(binary_num, 2)
+print(f"Die Dezimaldarstellung von {binary_num} ist: {decimal_from_binary}")
