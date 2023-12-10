@@ -44,3 +44,25 @@ def main():
 
 if __name__ == "__main__":
     main()
+######
+import unittest
+
+def decimal_to_hex(decimal_num):
+    return hex(decimal_num)
+
+def binary_to_decimal(binary_num):
+    return int(binary_num, 2)
+
+class TestConversionFunctions(unittest.TestCase):
+    def test_decimal_to_hex(self):
+        self.assertEqual(decimal_to_hex(10), '0xa')
+        self.assertEqual(decimal_to_hex(255), '0xff')
+        self.assertEqual(decimal_to_hex(16), '0x10')
+
+    def test_binary_to_decimal(self):
+        self.assertEqual(binary_to_decimal('1010'), 10)
+        self.assertEqual(binary_to_decimal('11111111'), 255)
+        self.assertEqual(binary_to_decimal('10000'), 16)
+
+if __name__ == '__main__':
+    unittest.main()
