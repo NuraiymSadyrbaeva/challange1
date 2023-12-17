@@ -34,3 +34,4 @@ end_ip = ipaddress.ip_address('192.168.0.10')
 
 for ip in range(int(start_ip), int(end_ip) + 1):
     print(ipaddress.ip_address(ip))
+#hier habe ich test für ip adressen
