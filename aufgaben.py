@@ -1,5 +1,4 @@
 #aufgabe 2
-#goahead
 #print ("Hallo Welt, das ist Zweite Aufgabe")
  
 name = input("Geben Sie Ihren Namen ein: ")
